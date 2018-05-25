@@ -1,3 +1,13 @@
+# The first statement in the body of a function is usually a string, which can be accessed with
+# function_name.__doc__
+# This statement is called Docstring.
+def Hello(name="everybody"):
+    """ Greets a person """
+    print("Hello " + name + "!")
+
+print("The docstring of the function Hello: " + Hello.__doc__)
+# o/p
+# The docstring of the function Hello:  Greets a person
 
 # positional arguments
 def my_function(str1, str2):
