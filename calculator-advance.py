@@ -16,6 +16,7 @@ def perform_math():
         equation = input(str(previous))
 
     if equation == "quit":
+        print("You quit.")
         run = False
     else:
         equation = re.sub('[a-zA-z,.:()" "]', '', equation)
