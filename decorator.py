@@ -24,3 +24,25 @@ f()
 # I am calling 'g' now:
 # Hi, it's me 'g'
 # Thanks for calling me
+
+#------------------------------------------------------------------------------#
+print("-----------------------------------------------------------------------")
+# Functions as Parameters
+
+def g():
+    print("Hi, it's me 'g'")
+    print("Thanks for calling me")
+
+def f(func):
+    print("This is the function 'f'")
+    print("I am calling 'func' now:")
+    func()
+    print("func's real name is " + func.__name__) # returns 'real' name of func
+
+f(g)
+# o/p
+# This is the function 'f'
+# I am calling 'func' now:
+# Hi, it's me 'g'
+# Thanks for calling me
+# func's real name is g
